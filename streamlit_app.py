@@ -66,16 +66,6 @@ if streamlit.button('Add a Fruit to the list'):
    back_from_function = insert_row_snowflake(add_my_fruit)
    streamlit.text(back_from_function)
    
-#This will not work correctly, but just go with it for now
-#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-#my_data_rows = my_cur.fetchall()
-#streamlit.dataframe(my_data_rows)
-#streamlit.write('The user entered ', fruit_choice)
-# import requests
-# streamlit.text(fruityvice_response.json())
-# take the json version of the response and normalise it
-# output it in the screen as a table
-#import snowflake.connector
-#don't run anything past here while we troubleshoot
-#streamlit.stop()   
+# use this stop command to not run anything past this line of code, used when troubleshooting
+#streamlit.stop() 
    
